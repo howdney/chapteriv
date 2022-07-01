@@ -38,9 +38,9 @@ jobs:
     
 # Github Pages (é usado para publicar o relatório diretamente no github do site)
 
-  -name: Deploy to GitHub Pages  
-  uses: JamesIves/github-pages-deploy-action@v4.3.4
-    with:
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN}}
-      BRANCH: gh-pages
-      FOLDER: mochawesome-report
+    - name: Deploy to GitHub Pages  
+      uses: JamesIves/github-pages-deploy-action@v4.3.4
+      with:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN}}
+        BRANCH: gh-pages
+        FOLDER: mochawesome-report
