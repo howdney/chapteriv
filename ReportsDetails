@@ -1,0 +1,35 @@
+Tipos de relatórios
+* Execução
+1. Específico da Execução que foi feita
+    Mochawesome
+    Allure Reports
+
+* Análise de médio / longo prazo
+2.  Consolidados
+    - Resultado de várias execuções de teste
+        - quais os testes que mais falham
+        - histórico de quantidade passado vs falhado
+        - histórico de execuções
+        - duração das suites de testes
+
+    Um exemplo é o Cypress Dashboard
+
+
+--------
+Mochawesome -> é uma biblioteca de geração de relatórios de testes
+   (também utilizado com outras bibliotecas auxiliares)
+    São elas:
+    cypress-multi-reporters
+        - xml -> CI
+        - mocha (json) -> relatório html
+    
+    mochawesome -> lib de geração do relatório (gera um arquivo por spec-> json/html)
+    
+    mochawesome-merge -> mescla os resultados de vários arquivos json em um só
+
+    mochawesome-report-generator -> marge (gera o relatório em html, baseado nos dados que estão mesclados)
+
+
+Biblioteca para limpar os dados que foram testados
+        rimraf (npm install rimraf - comando para instalar)
+         (adiciona o script dela no arquivo package.json)
